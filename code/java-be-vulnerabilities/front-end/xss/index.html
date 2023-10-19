@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulnerable XSS Example</title>
+</head>
+<body>
+<h1>Vulnerable XSS Example</h1>
+
+
+Select your language:
+
+<script type="text/javascript" src="lib/purify.js"></script>
+<select>
+
+    <script>
+
+    // document.write("<OPTION value=1>"+decodeURIComponent(document.location.href.substring(document.location.href.indexOf("default=")+8))+"</OPTION>");
+    //
+    // document.write("<OPTION value=2>English</OPTION>");
+
+    const url = decodeURIComponent(document.location.href.substring(document.location.href.indexOf("default=")+8));
+    document.write("<OPTION value=1>"+DOMPurify.sanitize(url)+"</OPTION>");
+    document.write("<OPTION value=2>English</OPTION>");
+
+    </script>
+
+
+</select>
+
+</body>
+</html>
