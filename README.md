@@ -17,3 +17,18 @@ The OWASP Top 10 is a standard awareness document representing a consensus about
 ## High-Level Security
 
 We will discuss high-level security measures such as encryption, two-factor authentication, secure coding practices, and more.
+
+# Secure Programming Course - Codebase Information
+
+The codebase that we will be using throughout this course is developed using the following technologies:
+
+## Java 21 and Spring Boot
+We will work on a Spring Boot application developed using Java 21. Java 21 brings several new features and improvements, making our application more robust and secure.
+
+## Angular 
+The front-end of our application is developed using the Angular framework. Angular's built-in protections against common web-application vulnerabilities ensure that our application is secure.
+
+## JavaScript and HTML
+Along with Angular, we will also be using plain JavaScript and HTML for certain parts of our application. We will adopt best practices for writing secure JavaScript and HTML code.
+
+This mix of technologies will give us an opportunity to learn and understand secure programming practices in diverse programming environments.
